@@ -1,0 +1,93 @@
+.philosophie{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 30px;
+	max-height: fit-content;
+	.moto-container{
+		padding: 20px 0 0;	
+	}
+	.tex-container{
+		font-weight: 300;
+		padding: 10px 0 15px;
+	}
+	.image-container{
+		height: fit-content;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		.foto{
+			flex: 1 1 100%;
+			width: 100%;
+			height: 450px;
+			.img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;	
+			}
+		}
+		.foto3{
+			position: relative;
+			a{
+				position: absolute;
+				bottom: 15px;
+				right: 15px;
+				padding: 5px;
+				display: flex;
+				border-radius: 50%;
+				border: 1px solid black;
+				transition: all 0.3s;
+				z-index: 1;
+				svg{
+					color: white;
+					font-size: 150%;
+				}
+			}
+		}
+	
+		a:hover{
+			background-color: white;
+			svg{
+				color: black;
+				// padding: 1px;
+			}
+		}
+	}
+	@media (min-width: 500px) {
+		.image-container{
+			gap: 15px;
+			.foto{
+				height: 600px;
+			}
+		}
+	}
+	@media (min-width:600px) {
+		.image-container{
+			.foto{
+				height: 650px;
+			}
+		}
+	}
+	@media (min-width:700px) {
+		.image-container{
+			.foto{
+				height: 750px;
+			}
+		}
+	}
+	@media (min-width:800px) {
+		.image-container{
+			.foto{
+				height: 850px;
+			}
+		}
+	}
+	@media (min-width: 900px) {
+		.image-container{
+			gap: 20px;
+			.foto{
+				height: 750px;
+				flex: 1 1 31%;
+			}
+		}
+	}
+}

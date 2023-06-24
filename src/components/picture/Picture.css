@@ -1,0 +1,93 @@
+.picture {
+  margin: 36px 0;
+}
+.picture .greetings {
+  width: 100%;
+  margin: 70px 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.picture .greetings mark {
+  background-color: white;
+  color: #004aab;
+}
+.picture .picture-container img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.picture .moto {
+  background-color: #BBB7B1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.picture .moto .text-container {
+  padding: 50px;
+}
+.picture .moto .text-container p {
+  font-size: 3.5em;
+  line-height: 1.3;
+  color: white;
+}
+.picture .moto .text-container p mark {
+  color: #493E54;
+  background-color: transparent;
+}
+.picture .moto .button-container {
+  padding: 20px 20px 20px;
+  display: flex;
+  align-items: end;
+  position: relative;
+  padding-left: 50px;
+}
+.picture .moto .button-container a {
+  padding: 5px;
+  font-size: 150%;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid rgb(88, 87, 87);
+  transition: all 0.4s;
+  z-index: 1;
+}
+.picture .moto .button-container a svg {
+  color: white;
+}
+.picture .moto .button-container a:hover {
+  background-color: white;
+}
+.picture .moto .button-container a:hover svg {
+  color: black;
+}
+@media (min-width: 900px) {
+  .picture {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .picture .greetings {
+    width: 100%;
+    margin: 50px 0 20px;
+  }
+  .picture .picture-container {
+    width: 60%;
+  }
+  .picture .picture-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .picture .moto {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 186, 160);
+  }
+  .picture .moto .text-container {
+    height: 50%;
+  }
+  .picture .moto .button-container {
+    height: 50%;
+  }
+}/*# sourceMappingURL=Picture.css.map */

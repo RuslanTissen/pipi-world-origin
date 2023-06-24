@@ -1,0 +1,218 @@
+.nutrition{
+	max-height: fit-content;
+	.nutrition-container{
+		margin: 50px 0 20px;
+		// display: flex;
+		font-family: 'Montserrat', sans-serif;
+		.nutrition__text--container{
+			p{
+				padding: 10px 0;
+				font-weight: 300;
+			}
+		}
+		.link-container{
+			display: flex;
+			padding: 10px 0;
+			.btn{
+				height: 33px;
+				color: black;
+				background-color: white;
+				border: 1px solid black;
+				font-size: .7em;
+				font-weight: bold;
+				font-family: 'Montserrat', sans-serif;
+				text-transform: uppercase;
+				padding: 10px 20px;
+				border-radius: 5000px;
+				transition: all 0.3s;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.btn:hover{
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+	.nutrition__tips--container{
+		font-family: 'Montserrat', sans-serif;
+		height: fit-content;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		.images{
+			width: 100%;
+			flex: 1 1 100%;
+			height: 650px;
+			display: flex;
+			flex-direction: column;
+			.images-img{
+				flex: 1 1 100%;
+				height: 50%;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.img1{
+				background-image: url("../../images/ntr1.jpg");
+			}
+			.img2{
+				background-image: url("../../images/ntr2.jpg");
+			}
+			.img3{
+				background-image: url("../../images/ntr5.jpg");
+			}
+		}
+		.tips__container{
+			flex: 1 1 100%;
+			height: 50%;
+			background-color: #309cef;
+			overflow: hidden;
+			h2{
+				margin:32px 32px 10px 32px;
+				color: white;
+			}
+			p{
+				display: block;
+				font-weight: 300;
+				margin: 0 32px 32px 32px;
+				color: white;
+			}
+		}
+		.tips__container3{
+			background-color: #309cef;
+			position: relative;
+			a{
+				position: absolute;
+				bottom: 15px;
+				right: 15px;
+				padding: 5px;
+				display: flex;
+				border-radius: 50%;
+				border: 1px solid black;
+				transition: all 0.3s;
+				z-index: 1;
+				svg{
+					color: white;
+					font-size: 150%;
+				}
+			}
+			a:hover{
+				background-color: white;
+				svg{
+					color: black;
+					// padding: 1px;
+				}
+			}
+		}
+	}
+	@media (min-width: 450px) {
+		.nutrition__tips--container{
+			.images{
+				flex: 1 1 100%;
+				height: 600px;
+				.images-img{
+					height: 50%;
+				}
+			}
+			.tips__container{
+					height: 50%;
+				p{
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+	@media (min-width: 550px) {
+		.nutrition__tips--container{
+			gap: 15px;
+			.images{
+				height: 550px;
+				border: 5px;
+				// .images-img{
+				// 	height: 50%;
+				// }
+			}
+			// .tips__container{
+			// 		height: 50%;
+			// 		overflow: hidden;
+			// }
+		}
+	}
+	@media (min-width: 650px) {
+		.nutrition__tips--container{
+			gap: 15px;
+			.images{
+				height: 500px;
+				.images-img{
+					height: 10%;
+				}
+			}
+			.tips__container{
+				height: 40%;
+				overflow: hidden;
+			}
+		}
+	}
+	@media (min-width: 900px) {
+		.nutrition-container{
+			display: flex;
+			.nutrition__text--container{
+				width: 60%;
+			}
+			.link-container{
+				display: flex;
+				justify-content: end;
+				align-items: end;
+				width: 40%;
+			}
+		}
+		.nutrition__tips--container{
+			height: 800px;
+			gap: 20px;
+			.images{
+				// width: 50%;
+				flex: 1 1 31%;
+				height: 100%;
+				// height: 750px;
+				.tips__container{
+					p{
+						font-size: 1.3rem;
+					}
+				}
+			}
+			
+		}
+	}
+	
+}
+
+
+
+
+// .carousel-root{
+// 	.carousel-slider{
+// 		.control-dots{
+
+// 		}
+// 		.slide-wrapper{
+
+// 		}
+
+// 		.control-arrow{
+// 			.carousel-status{
+// 				display: none;
+// 				visibility: hidden;
+// 		}
+// 		}
+		
+// 	}
+// 	.carousel{
+// 		.thumbs-wrapper{
+// 			.thumbs {
+
+// 			}
+// 		}
+// 	}
+// }
